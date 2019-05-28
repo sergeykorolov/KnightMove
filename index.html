@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Knight Move</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--фоурма для ввода координат-->
+    <div class="form">
+        <label for="currentPosition">Исходное положение:</label>
+        <input id="currentPosition" type="text">
+        <button class="submit" onclick="parseInput()">Ok</button>
+    </div>
+
+    <!--всплывающее окно с возможными ходами или с сообщением об ошибке-->
+    <div class="popup">
+        <p class="message">Возможные варианты хода:</p>
+        <p class="possibleMoves"></p>
+        <button class="ok" onclick="buttonOk()">OK</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
